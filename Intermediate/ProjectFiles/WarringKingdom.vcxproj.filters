@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<None Include="..\..\WarringKingdom.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{FB2247FF-FE82-4F37-9DE0-F6A2687474FE}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\WarringKingdom.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\WarringKingdomEditor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{17E1B90B-93D0-448C-AB17-73DEE5A8BA50}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultGame.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultInput.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Source\WarringKingdom">
+			<UniqueIdentifier>{F87F255C-C4E9-40A1-ACAF-7C310AD09399}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\WarringKingdom\WarringKingdom.Build.cs">
+			<Filter>Source\WarringKingdom</Filter>
+		</None >
+		<Filter Include="Source\WarringKingdom\Private">
+			<UniqueIdentifier>{25A79208-C7A0-4246-A87A-8DB2EF3D36AA}</UniqueIdentifier>
+		</Filter>
+		<ClCompile Include="..\..\Source\WarringKingdom\Private\GridManager.cpp">
+			<Filter>Source\WarringKingdom\Private</Filter>
+		</ClCompile >
+		<ClCompile Include="..\..\Source\WarringKingdom\Private\GridTile.cpp">
+			<Filter>Source\WarringKingdom\Private</Filter>
+		</ClCompile >
+		<ClCompile Include="..\..\Source\WarringKingdom\Private\WarringKingdom.cpp">
+			<Filter>Source\WarringKingdom\Private</Filter>
+		</ClCompile >
+		<ClCompile Include="..\..\Source\WarringKingdom\Private\WarringKingdomCharacter.cpp">
+			<Filter>Source\WarringKingdom\Private</Filter>
+		</ClCompile >
+		<ClCompile Include="..\..\Source\WarringKingdom\Private\WarringKingdomGameMode.cpp">
+			<Filter>Source\WarringKingdom\Private</Filter>
+		</ClCompile >
+		<ClCompile Include="..\..\Source\WarringKingdom\Private\WarringKingdomPlayerController.cpp">
+			<Filter>Source\WarringKingdom\Private</Filter>
+		</ClCompile >
+		<Filter Include="Source\WarringKingdom\Public">
+			<UniqueIdentifier>{D8191318-BE4B-4426-9925-2178DB298C2A}</UniqueIdentifier>
+		</Filter>
+		<ClInclude Include="..\..\Source\WarringKingdom\Public\GridManager.h">
+			<Filter>Source\WarringKingdom\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\WarringKingdom\Public\GridTile.h">
+			<Filter>Source\WarringKingdom\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\WarringKingdom\Public\WarringKingdom.h">
+			<Filter>Source\WarringKingdom\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\WarringKingdom\Public\WarringKingdomCharacter.h">
+			<Filter>Source\WarringKingdom\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\WarringKingdom\Public\WarringKingdomGameMode.h">
+			<Filter>Source\WarringKingdom\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\WarringKingdom\Public\WarringKingdomPlayerController.h">
+			<Filter>Source\WarringKingdom\Public</Filter>
+		</ClInclude >
+		<Filter Include="Source\WarringKingdom\Resources">
+			<UniqueIdentifier>{E8921749-53AE-4FF5-930F-F0163902E634}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="Source\WarringKingdom\Resources\Windows">
+			<UniqueIdentifier>{5B6691FD-5647-4D72-9A33-67B677B6D8FC}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\WarringKingdom\Resources\Windows\WarringKingdom.ico">
+			<Filter>Source\WarringKingdom\Resources\Windows</Filter>
+		</None >
+		<ResourceCompile Include="..\..\Source\WarringKingdom\Resources\Windows\WarringKingdom.rc">
+			<Filter>Source\WarringKingdom\Resources\Windows</Filter>
+		</ResourceCompile >
+	</ItemGroup>
+</Project>
