@@ -54,12 +54,14 @@
 		<None Include="..\..\Source\WarringKingdom\WarringKingdom.Build.cs" />
 		<ClCompile Include="..\..\Source\WarringKingdom\Private\GridManager.cpp" />
 		<ClCompile Include="..\..\Source\WarringKingdom\Private\GridTile.cpp" />
+		<ClCompile Include="..\..\Source\WarringKingdom\Private\OutOfPawnCharacter.cpp" />
 		<ClCompile Include="..\..\Source\WarringKingdom\Private\WarringKingdom.cpp" />
 		<ClCompile Include="..\..\Source\WarringKingdom\Private\WarringKingdomCharacter.cpp" />
 		<ClCompile Include="..\..\Source\WarringKingdom\Private\WarringKingdomGameMode.cpp" />
 		<ClCompile Include="..\..\Source\WarringKingdom\Private\WarringKingdomPlayerController.cpp" />
 		<ClInclude Include="..\..\Source\WarringKingdom\Public\GridManager.h" />
 		<ClInclude Include="..\..\Source\WarringKingdom\Public\GridTile.h" />
+		<ClInclude Include="..\..\Source\WarringKingdom\Public\OutOfPawnCharacter.h" />
 		<ClInclude Include="..\..\Source\WarringKingdom\Public\WarringKingdom.h" />
 		<ClInclude Include="..\..\Source\WarringKingdom\Public\WarringKingdomCharacter.h" />
 		<ClInclude Include="..\..\Source\WarringKingdom\Public\WarringKingdomGameMode.h" />

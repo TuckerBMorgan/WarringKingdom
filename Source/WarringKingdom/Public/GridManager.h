@@ -37,6 +37,7 @@ public:
 
 
 	TArray<TArray<AGridTile*>> MainGrid;
+	
 
 	UPROPERTY(EditDefaultsOnly, Category = Default)
 	TSubclassOf<class AGridTile> GridBluePrint;
@@ -54,6 +55,9 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = Default)
 		TArray<AGridTile*> GetGrid();
+
+	//UFUNCTION(BlueprintCallable, Category = Default)
+	//	bool PlaceUnitInGrid;
 
 
 	TArray<AGridTile*> LazyLoop;

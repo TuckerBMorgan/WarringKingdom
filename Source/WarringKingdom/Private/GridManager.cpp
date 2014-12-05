@@ -103,6 +103,7 @@ TArray<AGridTile*> AGridManager::FindPathToUnit(AGridTile* StartTile, AGridTile*
 
 	TArray<AGridTile*> CloseList;
 
+	TMap<FString, AGridTile*> SeenTiles;
 
 	for (int i = 0; i < SizeOfArray; i++)
 	{
@@ -115,9 +116,15 @@ TArray<AGridTile*> AGridManager::FindPathToUnit(AGridTile* StartTile, AGridTile*
 		}
 	}
 
-	StartTile->f = 0;
-	StartTile->h = 0;
+	int32 xDifToFinal_ = FMath::Abs(EndTile->x - StartTile->x);
+	int32 yDifToFinal_ = FMath::Abs(EndTile->y - StartTile->y);
+	int32 DsqrToFinal_ = FMath::Pow(xDifToFinal_, 2) + FMath::Pow(yDifToFinal_, 2);
+
+
+	StartTile->h = DsqrToFinal_;
 	StartTile->g = 0;
+	StartTile->f = DsqrToFinal_;
+
 
 	OpenList.Add(StartTile);
 
@@ -127,23 +134,34 @@ TArray<AGridTile*> AGridManager::FindPathToUnit(AGridTile* StartTile, AGridTile*
 		AGridTile* q = OpenList[FindLowest(OpenList)];
 		if (q == EndTile)
 		{
+		//	q->Parent = CloseList[CloseList.Num() - 1];
+		
+
 			return FinalPath(q);
 		}
 		q->HasBeenCheckFromSearch = true;
 		OpenList.Remove(q);
 		CloseList.Add(q);
+		SeenTiles.Add(q->name, q);
 		TArray<AGridTile*> Neighbors = EightNeighorsOf(q);
 
 		for (int i = 0; i < Neighbors.Num(); i++)
 		{
-			Neighbors[i]->Parent = q;
+		
+
+			if (Neighbors[i] == EndTile)
+			{
+				Neighbors[i]->Parent = q;
+
+				return FinalPath(Neighbors[i]);
+			}
 
 			
 			if (CloseList.Contains(Neighbors[i]))
 			{
 				continue;
 			}
-
+			Neighbors[i]->Parent = q;
 
 
 			int32 xDif = FMath::Abs(q->x - Neighbors[i]->x);
@@ -154,14 +172,19 @@ TArray<AGridTile*> AGridManager::FindPathToUnit(AGridTile* StartTile, AGridTile*
 			int32 DsqrToFinal = FMath::Pow(xDifToFinal, 2) + FMath::Pow(yDifToFinal, 2);
 
 
+
 			int tentativeG = q->g + Dsqr;
+			if (Neighbors[i]->g == 0)
+			{
+				Neighbors[i]->g = tentativeG;
+			}
 
 			Neighbors[i]->h = DsqrToFinal;
 
 			Neighbors[i]->f = Neighbors[i]->g + Neighbors[i]->h;
 
 			
-			if (!OpenList.Contains(Neighbors[i]))
+			if (!SeenTiles.Contains(Neighbors[i]->name))
 			{
 				OpenList.Add(Neighbors[i]);
 

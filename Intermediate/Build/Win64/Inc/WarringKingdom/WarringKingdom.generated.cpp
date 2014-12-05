@@ -25,6 +25,10 @@ void EmptyLinkFunctionForGeneratedCodeWarringKingdom() {}
 	{
 	}
 	IMPLEMENT_CLASS(AWarringKingdomCharacter, 2527710404);
+	void AOutOfPawnCharacter::StaticRegisterNativesAOutOfPawnCharacter()
+	{
+	}
+	IMPLEMENT_CLASS(AOutOfPawnCharacter, 2646508831);
 	void AWarringKingdomGameMode::StaticRegisterNativesAWarringKingdomGameMode()
 	{
 	}
@@ -53,6 +57,8 @@ void EmptyLinkFunctionForGeneratedCodeWarringKingdom() {}
 	WARRINGKINGDOM_API class UClass* Z_Construct_UClass_AGridTile();
 	WARRINGKINGDOM_API class UClass* Z_Construct_UClass_AWarringKingdomCharacter_NoRegister();
 	WARRINGKINGDOM_API class UClass* Z_Construct_UClass_AWarringKingdomCharacter();
+	WARRINGKINGDOM_API class UClass* Z_Construct_UClass_AOutOfPawnCharacter_NoRegister();
+	WARRINGKINGDOM_API class UClass* Z_Construct_UClass_AOutOfPawnCharacter();
 	WARRINGKINGDOM_API class UClass* Z_Construct_UClass_AWarringKingdomGameMode_NoRegister();
 	WARRINGKINGDOM_API class UClass* Z_Construct_UClass_AWarringKingdomGameMode();
 	WARRINGKINGDOM_API class UClass* Z_Construct_UClass_AWarringKingdomPlayerController_NoRegister();
@@ -313,6 +319,34 @@ void EmptyLinkFunctionForGeneratedCodeWarringKingdom() {}
 		return OuterClass;
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AWarringKingdomCharacter(Z_Construct_UClass_AWarringKingdomCharacter, TEXT("AWarringKingdomCharacter"));
+	UClass* Z_Construct_UClass_AOutOfPawnCharacter_NoRegister()
+	{
+		return AOutOfPawnCharacter::StaticClass();
+	}
+	UClass* Z_Construct_UClass_AOutOfPawnCharacter()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AWarringKingdomCharacter();
+			Z_Construct_UPackage_WarringKingdom();
+			OuterClass = AOutOfPawnCharacter::StaticClass();
+			UObjectForceRegistration(OuterClass);
+			OuterClass->ClassFlags |= 0x00900080;
+
+
+			OuterClass->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+			MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Navigation AI|Navigation Pawn|Character|InternalEvents"));
+			MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("OutOfPawnCharacter.h"));
+			MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/OutOfPawnCharacter.h"));
+#endif
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AOutOfPawnCharacter(Z_Construct_UClass_AOutOfPawnCharacter, TEXT("AOutOfPawnCharacter"));
 	UClass* Z_Construct_UClass_AWarringKingdomGameMode_NoRegister()
 	{
 		return AWarringKingdomGameMode::StaticClass();
@@ -380,8 +414,8 @@ void EmptyLinkFunctionForGeneratedCodeWarringKingdom() {}
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/WarringKingdom")), false, false));
 			ReturnPackage->PackageFlags |= PKG_CompiledIn | 0x00000000;
 			FGuid Guid;
-			Guid.A = 0xB7AECCCB;
-			Guid.B = 0x60ED92EA;
+			Guid.A = 0xCE682132;
+			Guid.B = 0x97108ED3;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

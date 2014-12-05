@@ -14,6 +14,9 @@
 #ifndef WARRINGKINGDOM_WarringKingdomCharacter_generated_h
 	#include "Public/WarringKingdomCharacter.h"
 #endif
+#ifndef WARRINGKINGDOM_OutOfPawnCharacter_generated_h
+	#include "Public/OutOfPawnCharacter.h"
+#endif
 #ifndef WARRINGKINGDOM_WarringKingdomGameMode_generated_h
 	#include "Public/WarringKingdomGameMode.h"
 #endif

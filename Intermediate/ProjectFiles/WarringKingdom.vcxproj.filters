@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\WarringKingdom.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{FB2247FF-FE82-4F37-9DE0-F6A2687474FE}</UniqueIdentifier>
+			<UniqueIdentifier>{AC20A36F-2409-422F-802B-DE75068CD6FB}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\WarringKingdom.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{17E1B90B-93D0-448C-AB17-73DEE5A8BA50}</UniqueIdentifier>
+			<UniqueIdentifier>{FC095038-FA47-488B-B0F2-0B829250948B}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -28,18 +28,21 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\WarringKingdom">
-			<UniqueIdentifier>{F87F255C-C4E9-40A1-ACAF-7C310AD09399}</UniqueIdentifier>
+			<UniqueIdentifier>{F0919C0C-2697-4037-A28A-7A3E1722CFDA}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\WarringKingdom\WarringKingdom.Build.cs">
 			<Filter>Source\WarringKingdom</Filter>
 		</None >
 		<Filter Include="Source\WarringKingdom\Private">
-			<UniqueIdentifier>{25A79208-C7A0-4246-A87A-8DB2EF3D36AA}</UniqueIdentifier>
+			<UniqueIdentifier>{22A89817-BF9B-4312-BB2F-0B331B2A1346}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\WarringKingdom\Private\GridManager.cpp">
 			<Filter>Source\WarringKingdom\Private</Filter>
 		</ClCompile >
 		<ClCompile Include="..\..\Source\WarringKingdom\Private\GridTile.cpp">
+			<Filter>Source\WarringKingdom\Private</Filter>
+		</ClCompile >
+		<ClCompile Include="..\..\Source\WarringKingdom\Private\OutOfPawnCharacter.cpp">
 			<Filter>Source\WarringKingdom\Private</Filter>
 		</ClCompile >
 		<ClCompile Include="..\..\Source\WarringKingdom\Private\WarringKingdom.cpp">
@@ -55,12 +58,15 @@
 			<Filter>Source\WarringKingdom\Private</Filter>
 		</ClCompile >
 		<Filter Include="Source\WarringKingdom\Public">
-			<UniqueIdentifier>{D8191318-BE4B-4426-9925-2178DB298C2A}</UniqueIdentifier>
+			<UniqueIdentifier>{5B9953E9-7107-4448-9967-B58416BFBE99}</UniqueIdentifier>
 		</Filter>
 		<ClInclude Include="..\..\Source\WarringKingdom\Public\GridManager.h">
 			<Filter>Source\WarringKingdom\Public</Filter>
 		</ClInclude >
 		<ClInclude Include="..\..\Source\WarringKingdom\Public\GridTile.h">
+			<Filter>Source\WarringKingdom\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\WarringKingdom\Public\OutOfPawnCharacter.h">
 			<Filter>Source\WarringKingdom\Public</Filter>
 		</ClInclude >
 		<ClInclude Include="..\..\Source\WarringKingdom\Public\WarringKingdom.h">
@@ -76,10 +82,10 @@
 			<Filter>Source\WarringKingdom\Public</Filter>
 		</ClInclude >
 		<Filter Include="Source\WarringKingdom\Resources">
-			<UniqueIdentifier>{E8921749-53AE-4FF5-930F-F0163902E634}</UniqueIdentifier>
+			<UniqueIdentifier>{31F87B27-E870-4FA4-8ABA-C58E030EFD38}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="Source\WarringKingdom\Resources\Windows">
-			<UniqueIdentifier>{5B6691FD-5647-4D72-9A33-67B677B6D8FC}</UniqueIdentifier>
+			<UniqueIdentifier>{477D5C40-2F27-448C-93BB-17C64A16DCAF}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\WarringKingdom\Resources\Windows\WarringKingdom.ico">
 			<Filter>Source\WarringKingdom\Resources\Windows</Filter>
